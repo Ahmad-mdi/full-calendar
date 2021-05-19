@@ -11,6 +11,7 @@
 <body>
 
 @include('fullcalendar.modal-calendar')
+
 <div id='wrap'>
     <div id='external-events'>
         <h4>Draggable Events</h4>
@@ -28,9 +29,10 @@
 
     <div id='calendar-wrap'>
         <div
-            id='calendar' class="fc-event-main"
+            id='calendar' class=""
             data-route-load-events = "{{route('routeLoadEvents')}}"
             data-route-event-update = "{{route('routeEventUpdate')}}"
+            data-route-event-store = "{{route('routeEventStore')}}"
         ></div>
     </div>
 </div>
